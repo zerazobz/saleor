@@ -308,7 +308,7 @@ class ChangeStockForm(forms.ModelForm):
         fields = ['stock']
         labels = {
             'stock': pgettext_lazy(
-                'Ordered line field', 'Stock amount')}
+                'Change stock form label', 'Stock amount')}
 
     def __init__(self, *args, **kwargs):
         super(ChangeStockForm, self).__init__(*args, **kwargs)
