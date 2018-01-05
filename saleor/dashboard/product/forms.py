@@ -309,7 +309,7 @@ class StockLocationForm(forms.ModelForm):
         exclude = []
         labels = {
             'name': pgettext_lazy(
-                'Stock location name', 'Name')}
+                'Item name', 'Name')}
 
 
 class AttributeChoiceValueForm(forms.ModelForm):
@@ -320,8 +320,6 @@ class AttributeChoiceValueForm(forms.ModelForm):
         labels = {
             'name': pgettext_lazy(
                 'Name', 'Name'),
-            'attribute': pgettext_lazy(
-                'Product attribute', 'Attribute'),
             'color': pgettext_lazy(
                 'Color', 'Color')}
 
