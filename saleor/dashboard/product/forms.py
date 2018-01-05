@@ -118,9 +118,9 @@ class ProductForm(forms.ModelForm):
         exclude = ['attributes', 'product_class', 'updated_at']
         labels = {
             'name': pgettext_lazy('Item name', 'Name'),
-            'description': pgettext_lazy('Item description', 'Description'),
+            'description': pgettext_lazy('Description', 'Description'),
             'categories': pgettext_lazy('Categories', 'Categories'),
-            'price': pgettext_lazy('Price', 'Price'),
+            'price': pgettext_lazy('Currency amount', 'Price'),
             'available_on': pgettext_lazy(
                 'Availability date', 'Availability date'),
             'is_published': pgettext_lazy(
@@ -264,7 +264,7 @@ class ProductImageForm(forms.ModelForm):
         labels = {
             'image': pgettext_lazy('Product image', 'Image'),
             'alt': pgettext_lazy(
-                'Product image description', 'Short description')}
+                'Description', 'Description')}
 
     def __init__(self, *args, **kwargs):
         super(ProductImageForm, self).__init__(*args, **kwargs)
@@ -319,7 +319,7 @@ class AttributeChoiceValueForm(forms.ModelForm):
         widgets = {'attribute': forms.widgets.HiddenInput()}
         labels = {
             'name': pgettext_lazy(
-                'Name', 'Name'),
+                'Item name', 'Name'),
             'color': pgettext_lazy(
                 'Color', 'Color')}
 
