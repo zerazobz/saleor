@@ -1818,11 +1818,11 @@ msgstr "Inicio"
 
 #: .\templates\category\index.html:71
 msgid "Sort by: <b>name</b>"
-msgstr ""
+msgstr "Ordenado por: <b>nombre</b>"
 
 #: .\templates\category\index.html:75
 msgid "Sort by: <b>price</b>"
-msgstr ""
+msgstr "Ordenado por: <b>precio</b>"
 
 #: .\templates\category\index.html:94
 msgctxt "Category page filters"
